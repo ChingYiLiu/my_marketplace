@@ -1,0 +1,6 @@
+interface:
+  display_name: "Engineering Portfolio Extractor"
+  short_description: "Rebuild private work concepts as safe portfolio cases"
+  default_prompt: "Use $engineering-portfolio-extractor to turn an approved work-project concept into a public-safe portfolio case."
+policy:
+  allow_implicit_invocation: true
