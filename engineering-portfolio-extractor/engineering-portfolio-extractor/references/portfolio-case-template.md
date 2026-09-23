@@ -1,6 +1,6 @@
 # Portfolio Case README Template
 
-Use this template only for an independently reimplemented case. Replace bracketed text with public-safe, neutral content. Do not identify an employer, customer, source system, or original project.
+Use this template only for an independently reimplemented case. Replace bracketed text with public-safe, neutral content. Do not identify an employer, customer, source system, or original project. If the README needs an API or code example, use invented route, parameter, response, and function names that do not match the source project; keep production rules and measurements out unless specifically approved for public use.
 
 ```markdown
 # [Neutral case title]

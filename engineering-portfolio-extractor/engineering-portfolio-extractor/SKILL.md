@@ -89,6 +89,16 @@ Before creating or importing material, scan the proposed files and any candidate
 
 Remove unsafe material by designing an alternative, not by redacting it in place. Replace data with synthetic data and rebuild code from the abstraction brief. If a scanner finding cannot be confidently classified as safe, treat it as **EXCLUDE** until the user confirms it is public and reusable.
 
+## Public examples and attribution
+
+Apply the same disclosure rules to prose, diagrams, screenshots, sample requests, HTML, bundled JavaScript, and files that are not linked from the homepage. Readers can inspect source files as well as the visible page.
+
+- Never use a real service route as a demonstration route. Invent a distinct route and interface for the new case; also invent request parameter names, response fields, error behavior, module/class/function names, and internal resource names. Check them against the source project before publishing. Changing only a prefix or a few characters is insufficient. If the interface is not central to the case, describe its purpose without a contract example.
+- Explain decision stages and trade-offs without reproducing exact production triggers, thresholds, ranking weights, fallback order, special treatment for suppliers or products, or other business rules. Any runnable demo logic must be independently designed and clearly labeled as illustrative, not a disguised version of production logic.
+- Omit real system scale, latency, conversion figures, dataset sizes, and similar measurements by default. Include a real figure only when the user confirms it is approved for public use and can substantiate it; otherwise use a clearly labeled synthetic demonstration measurement that is not derived from a production value.
+- Describe only the user's verified contribution. Do not identify an employer, manager, colleague, customer, patent title or number, or the source of a business idea unless the user explicitly confirms that specific attribution is public and approved. Avoid wording that implies sole ownership of team work or company IP.
+- Call invented data **synthetic**, not merely anonymized or de-identified. State that demo routes, scores, rules, and assets are independent examples when a reader might mistake them for the real service.
+
 ## Reimplement the case
 
 Create a small, runnable case under a clear engineering-domain folder, for example:
@@ -138,6 +148,7 @@ Before committing, packaging, publishing, or calling a case finished:
 
 1. Re-scan every tracked file, including documentation, samples, hidden files, generated outputs, and test fixtures.
 2. Review the diff for copied text, recognizable naming, private URLs, data shapes, credentials, and business semantics.
+   Compare all published routes, parameter and response names, function names, example rules, metrics, and attribution against the source; confirm that examples are invented and that any approved real figure is accurately labeled.
 3. Inspect Git history and staged changes. A clean current tree is insufficient if sensitive content appeared in an earlier portfolio commit.
 4. Ensure the portfolio is a fresh repository or has an independently created history. Never carry over the company repository's commits, authorship, remotes, branches, tags, or ignored files.
 5. Run the documented test command and any local static/safety checks that are appropriate to the language.
