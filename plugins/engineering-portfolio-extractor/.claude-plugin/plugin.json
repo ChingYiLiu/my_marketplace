@@ -1,0 +1,8 @@
+{
+  "name": "engineering-portfolio-extractor",
+  "version": "0.1.0",
+  "description": "Turn approved engineering concepts into independently reimplemented, public-safe portfolio cases.",
+  "author": {
+    "name": "ChingYiLiu"
+  }
+}

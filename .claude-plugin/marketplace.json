@@ -1,0 +1,20 @@
+{
+  "name": "my-marketplace",
+  "owner": {
+    "name": "ChingYiLiu",
+    "url": "https://github.com/ChingYiLiu"
+  },
+  "description": "Personal plugins for Claude Code and Codex",
+  "plugins": [
+    {
+      "name": "family-comic",
+      "source": "./plugins/family-comic",
+      "description": "Create six-panel family comics"
+    },
+    {
+      "name": "engineering-portfolio-extractor",
+      "source": "./plugins/engineering-portfolio-extractor",
+      "description": "Rebuild approved engineering concepts as public-safe portfolio cases"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "family-comic",
+  "version": "0.1.0",
+  "description": "Create a cohesive six-panel comic from a family moment using the bundled style reference.",
+  "author": {
+    "name": "ChingYiLiu",
+    "url": "https://github.com/ChingYiLiu"
+  },
+  "repository": "https://github.com/ChingYiLiu/my_marketplace",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Family Comic",
+        "shortDescription": "Create six-panel family comics",
+        "developerName": "ChingYiLiu",
+        "category": "Productivity"
+      }
+    }
+  }
+}

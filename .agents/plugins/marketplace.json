@@ -1,0 +1,32 @@
+{
+  "name": "my-marketplace",
+  "interface": {
+    "displayName": "My Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "family-comic",
+      "source": {
+        "source": "local",
+        "path": "./plugins/family-comic"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "engineering-portfolio-extractor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/engineering-portfolio-extractor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
